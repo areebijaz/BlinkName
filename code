@@ -1,0 +1,45 @@
+int led2 = D7;
+
+void setup() 
+{
+  pinMode(led2, OUTPUT);
+}
+int stop =100;
+
+void dot()
+{
+    digitalWrite(led2,HIGH);
+    delay(stop);
+    digitalWrite(led2,LOW);
+    delay(stop);
+}
+
+void dash()
+{
+    digitalWrite(led2,HIGH);
+    delay(stop*2);
+    digitalWrite(led2,LOW);
+    delay(stop);
+}
+
+void loop()
+{
+//AREEB
+dot();
+dash();
+
+dot();
+dash();
+dot();
+
+dot();
+
+dot();
+
+dash();
+dot();
+dot();
+dot();
+
+}
+
